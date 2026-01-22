@@ -70,7 +70,7 @@ export default function EventsPage() {
     setUser(user)
 
     if (!user) {
-      router.push('/auth/login')
+      router.push('/login')
     }
   }
 

@@ -51,7 +51,7 @@ export default function EventDetailPage() {
     setUser(user)
 
     if (!user) {
-      router.push('/auth/login')
+      router.push('/login')
       return
     }
 
