@@ -41,7 +41,7 @@ export default function ProfilePage() {
     setUser(user)
 
     if (!user) {
-      router.push('/auth/login')
+      router.push('/login')
     }
   }
 
@@ -135,7 +135,7 @@ export default function ProfilePage() {
   const handleSignOut = async () => {
     const supabase = createClient()
     await supabase.auth.signOut()
-    router.push('/auth/login')
+    router.push('/login')
   }
 
   const formatDate = (dateString: string) => {
